@@ -1,0 +1,116 @@
+/* Estilos Generales */
+:root {
+    --industrial-yellow: #facc15;
+    --industrial-black: #000000;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+/* Navegación Corregida */
+.nav-main {
+    background-color: var(--industrial-black);
+    border-bottom: 2px solid var(--industrial-yellow);
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--industrial-yellow);
+}
+
+/* ... Tus otros estilos se mantienen igual ... */
+
+/* Logo Redondo Ajustado en el Flujo Flex */
+.logo-container {
+    background-color: var(--industrial-black);
+    border: 4px solid var(--industrial-yellow);
+    border-radius: 50%;
+    padding: 6px;
+    height: 120px; /* Un tamaño óptimo para que no rompa el nav */
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.6);
+    /* Removido position: absolute y márgenes fijos */
+    margin-top: 40px; /* Hace que el círculo sobresalga hacia abajo del nav de forma limpia */
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+}
+
+.logo-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Alineación limpia del menú a la derecha */
+.nav-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1; /* Ocupa el espacio restante para empujar los enlaces al extremo derecho */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../img/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Tarjetas de Equipos */
+.card-equipo {
+    background: white;
+    border-radius: 0.5rem;
+    border-top: 4px solid var(--industrial-yellow);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-equipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones */
+.btn-whatsapp {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #15803d;
+}
+
+/* Footer Industrial */
+.footer-main {
+    background-color: #0d0d0d;
+    color: #e5e7eb;
+    border-top: 4px solid var(--industrial-yellow);
+}
+
+.footer-link {
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--industrial-yellow);
+}
